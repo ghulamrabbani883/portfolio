@@ -109,9 +109,24 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#3b82f6" />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#1e293b" />
+        <meta name="color-scheme" content="dark light" />
         <link rel="canonical" href="https://ghulamrabbani-portfolio.vercel.app" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Apply dark theme immediately to prevent flash
+              (function() {
+                const theme = localStorage.getItem('theme') || 'dark';
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

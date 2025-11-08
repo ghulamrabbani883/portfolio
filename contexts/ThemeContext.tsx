@@ -19,11 +19,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         setMounted(true);
 
-        // Check for saved theme preference or default to system preference
+        // Check for saved theme preference or default to dark theme
         const savedTheme = localStorage.getItem('theme') as Theme;
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        // Default to dark theme if no saved preference
+        const initialTheme = savedTheme || 'dark';
         setTheme(initialTheme);
 
         // Apply theme to document
@@ -47,11 +47,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     };
 
     if (!mounted) {
-        // Return a default light theme during SSR/initial render
+        // Return a default dark theme during SSR/initial render
         const defaultValue = {
-            theme: 'light' as Theme,
+            theme: 'dark' as Theme,
             toggleTheme: () => { },
-            isDark: false
+            isDark: true
         };
         return (
             <ThemeContext.Provider value={defaultValue}>
