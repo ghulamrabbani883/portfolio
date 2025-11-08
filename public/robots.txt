@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ghulamrabbani-portfolio.vercel.app/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Block access to admin or private areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow all images
+User-agent: Googlebot-Image
+Allow: /*
+
+# Allow all css and js files
+User-agent: *
+Allow: /*.css
+Allow: /*.js
