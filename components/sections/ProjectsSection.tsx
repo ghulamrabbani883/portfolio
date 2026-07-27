@@ -2,7 +2,7 @@ export default function ProjectsSection() {
     const projects = [
         {
             title: "Education ERP",
-            description: "Developed a comprehensive Education ERP for managing students, guardians, hostel, attendance, academics, examinations, and administrative workflows.\n• Built reusable React.js components and integrated scalable REST APIs using Node.js./Express.js\n• Implemented CRUD operations, reporting modules, validations, and workflow automation to improve operational efficiency.\n• Optimized frontend rendering and backend data flow, delivering a responsive and scalable enterprise solution.",
+            description: "Developed a comprehensive Education ERP for managing students, guardians, hostel, attendance, academics, examinations, and administrative workflows.\n• Built reusable React.js components and integrated scalable REST APIs using Node.js./Express.js\nImplemented CRUD operations, reporting modules, validations, and workflow automation to improve operational efficiency.\nOptimized frontend rendering and backend data flow, delivering a responsive and scalable enterprise solution.",
             tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "TailwindCSS"],
             colors: "from-green-500 to-green-600",
             link: "#",
@@ -72,7 +72,6 @@ export default function ProjectsSection() {
             colors: "from-teal-500 to-teal-600",
             link: "https://www.onewiththenature.com/",
             linkColor: "teal",
-            fullWidth: true,
             icon: (
                 <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -103,11 +102,11 @@ export default function ProjectsSection() {
                 <h2 className="text-4xl font-bold text-center text-slate-900 dark:text-white mb-16">
                     Featured Projects
                 </h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className={`bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group ${project.fullWidth ? 'lg:col-span-2' : ''}`}
+                            className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
                         >
                             <div className={`h-48 bg-gradient-to-r ${project.colors} flex items-center justify-center relative`}>
                                 {project.icon}
