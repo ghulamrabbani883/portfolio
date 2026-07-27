@@ -2,7 +2,7 @@ export default function ProjectsSection() {
     const projects = [
         {
             title: "Education ERP",
-            description: "Developed a comprehensive Education ERP for managing students, guardians, hostel, attendance, academics, examinations, and administrative workflows.\n• Built reusable React.js components and integrated scalable REST APIs using Node.js./Express.js\nImplemented CRUD operations, reporting modules, validations, and workflow automation to improve operational efficiency.\nOptimized frontend rendering and backend data flow, delivering a responsive and scalable enterprise solution.",
+            description: "Developed a comprehensive Education ERP for managing students, guardians, hostel, attendance, academics, examinations, and administrative workflows.",
             tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "TailwindCSS"],
             colors: "from-green-500 to-green-600",
             link: "#",
