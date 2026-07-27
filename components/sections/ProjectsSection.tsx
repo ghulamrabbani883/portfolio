@@ -1,9 +1,22 @@
 export default function ProjectsSection() {
     const projects = [
         {
+            title: "Education ERP",
+            description: "Developed a comprehensive Education ERP for managing students, guardians, hostel, attendance, academics, examinations, and administrative workflows.\n• Built reusable React.js components and integrated scalable REST APIs using Node.js./Express.js\n• Implemented CRUD operations, reporting modules, validations, and workflow automation to improve operational efficiency.\n• Optimized frontend rendering and backend data flow, delivering a responsive and scalable enterprise solution.",
+            tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "TailwindCSS"],
+            colors: "from-green-500 to-green-600",
+            link: "#",
+            linkColor: "green",
+            icon: (
+                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            )
+        },
+        {
             title: "Teleconsultation Website",
             description: "Multispecialty hospital platform for remote consultation via video conferencing, enabling seamless doctor-patient interactions.",
-            tech: ["React.js", "Frappe", "Jitsi", "TailwindCSS"],
+            tech: ["React.js", "Node.js", "Express.js", "Jitsi", "TailwindCSS"],
             colors: "from-blue-500 to-blue-600",
             link: "#",
             linkColor: "blue",
@@ -29,7 +42,7 @@ export default function ProjectsSection() {
         {
             title: "CG Minor Forest Marketplace",
             description: "Marketplace platform for forest produce products, connecting producers and buyers in the forestry sector.",
-            tech: ["Next.js", "TailwindCSS", "Frappe"],
+            tech: ["Next.js", "TailwindCSS"],
             colors: "from-emerald-500 to-emerald-600",
             link: "#",
             linkColor: "emerald",
@@ -129,7 +142,7 @@ export default function ProjectsSection() {
                                         </a>
                                     )}
                                 </div>
-                                <p className="text-slate-600 dark:text-slate-400 mb-4">
+                                <p className="text-slate-600 dark:text-slate-400 mb-4 whitespace-pre-line">
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-4">
