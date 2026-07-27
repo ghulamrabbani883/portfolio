@@ -13,7 +13,7 @@ export default function HeroSection() {
                             Software Engineer
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                            Full-stack MERN engineer with 2.8+ years of experience, currently leading development and architecture planning at Klaimify. Skilled in designing scalable systems, optimizing performance, and mentoring team members. Strong focus on clean code, efficient state management, and high-quality user experience.
+                            Full-stack MERN engineer with 3.4+ years of experience, currently leading development and architecture planning at Klaimify. Skilled in designing scalable systems, optimizing performance, and mentoring team members. Strong focus on clean code, efficient state management, and high-quality user experience.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors text-center">
