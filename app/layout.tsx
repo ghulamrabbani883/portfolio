@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Ghulam Rabbani - Software Engineer | Full-Stack MERN Developer",
     template: "%s | Ghulam Rabbani - Software Engineer"
   },
-  description: "Full-stack MERN engineer with 2.8+ years of experience, currently leading development and architecture planning at Klaimify. Specialized in React.js, Next.js, Node.js, NestJS, MongoDB, PostgreSQL, and cloud deployment solutions.",
+  description: "Full-stack software engineer building web applications with React.js, Next.js, Node.js, NestJS, MongoDB, PostgreSQL, and modern cloud technologies.",
   keywords: [
     "Software Engineer",
     "Full-Stack Developer",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://ghulamrabbani-portfolio.vercel.app", // Replace with your actual domain
     title: "Ghulam Rabbani - Software Engineer | Full-Stack MERN Developer",
-    description: "Full-stack MERN engineer with 2.8+ years of experience, currently leading development and architecture planning at Klaimify. Specialized in modern web technologies and cloud solutions.",
+    description: "Full-stack software engineer building modern web applications and cloud solutions.",
     siteName: "Ghulam Rabbani Portfolio",
     images: [
       {

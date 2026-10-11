@@ -10,7 +10,7 @@ export default function TechnologySection() {
         },
         "Cloud & Hosting": {
             icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z",
-            items: ["AWS", "VPS", "Cloudflare", "Vercel", "Netlify"]
+            items: ["AWS", "Docker", "Kubernetes", "VPS", "Cloudflare", "Vercel", "Netlify"]
         },
         "Programming Languages": {
             icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",

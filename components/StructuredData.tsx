@@ -6,17 +6,13 @@ export default function StructuredData() {
         "@type": "Person",
         "name": "Ghulam Rabbani",
         "jobTitle": "Software Engineer",
-        "description": "Full-stack MERN engineer with 2.8+ years of experience, currently leading development and architecture planning at Klaimify.",
+        "description": "Full-stack software engineer building web applications and contributing to architecture, product development, and maintainable software.",
         "url": "https://ghulamrabbani-portfolio.vercel.app", // Replace with your actual domain
         "sameAs": [
             "https://github.com/ghulamrabbani", // Replace with your actual GitHub
             "https://linkedin.com/in/ghulamrabbani", // Replace with your actual LinkedIn
             // Add other social profiles
         ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Klaimify"
-        },
         "knowsAbout": [
             "JavaScript",
             "TypeScript",

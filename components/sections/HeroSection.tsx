@@ -6,14 +6,14 @@ export default function HeroSection() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center justify-between py-20">
                     <div className="lg:w-1/2 mb-10 lg:mb-0">
-                        <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-                            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Ghulam Rabbani</span>
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6">
+                            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Ghulam Rabbani</span>
                         </h1>
                         <h2 className="text-2xl lg:text-3xl font-semibold text-slate-700 dark:text-slate-300 mb-6">
-                            Software Engineer
+                            Software Engineer building full-stack products
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                            Full-stack MERN engineer with 3.4+ years of experience, currently leading development and architecture planning at Klaimify. Skilled in designing scalable systems, optimizing performance, and mentoring team members. Strong focus on clean code, efficient state management, and high-quality user experience.
+                            I build end-to-end web applications for complex, real-world workflows—from education management and payments to online healthcare. I focus on maintainable systems, thoughtful user experiences, and turning operational needs into reliable software.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors text-center">

@@ -5,7 +5,7 @@ export default function ProjectsSection() {
             description: "Developed a comprehensive Education ERP for managing students, guardians, hostel, attendance, academics, examinations, and administrative workflows.",
             tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "TailwindCSS"],
             colors: "from-green-500 to-green-600",
-            link: "#",
+            link: "/education-erp",
             linkColor: "green",
             icon: (
                 <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -18,7 +18,7 @@ export default function ProjectsSection() {
             description: "Multispecialty hospital platform for remote consultation via video conferencing, enabling seamless doctor-patient interactions.",
             tech: ["React.js", "Node.js", "Express.js", "Jitsi", "TailwindCSS"],
             colors: "from-blue-500 to-blue-600",
-            link: "#",
+            link: "/teleconsultation",
             linkColor: "blue",
             icon: (
                 <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -26,32 +26,32 @@ export default function ProjectsSection() {
                 </svg>
             )
         },
-        {
-            title: "AgriTradeX Bidding System",
-            description: "India's trusted marketplace for agri commodities connecting FPOs, millers, traders, exporters, and importers with integrated payment solutions.",
-            tech: ["React Native", "React.js", "NestJS", "TailwindCSS"],
-            colors: "from-green-500 to-green-600",
-            link: "#",
-            linkColor: "green",
-            icon: (
-                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-            )
-        },
-        {
-            title: "CG Minor Forest Marketplace",
-            description: "Marketplace platform for forest produce products, connecting producers and buyers in the forestry sector.",
-            tech: ["Next.js", "TailwindCSS"],
-            colors: "from-emerald-500 to-emerald-600",
-            link: "#",
-            linkColor: "emerald",
-            icon: (
-                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-            )
-        },
+        // {
+        //     title: "AgriTradeX Bidding System",
+        //     description: "India's trusted marketplace for agri commodities connecting FPOs, millers, traders, exporters, and importers with integrated payment solutions.",
+        //     tech: ["React Native", "React.js", "NestJS", "TailwindCSS"],
+        //     colors: "from-green-500 to-green-600",
+        //     link: "#",
+        //     linkColor: "green",
+        //     icon: (
+        //         <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        //             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+        //         </svg>
+        //     )
+        // },
+        // {
+        //     title: "CG Minor Forest Marketplace",
+        //     description: "Marketplace platform for forest produce products, connecting producers and buyers in the forestry sector.",
+        //     tech: ["Next.js", "TailwindCSS"],
+        //     colors: "from-emerald-500 to-emerald-600",
+        //     link: "#",
+        //     linkColor: "emerald",
+        //     icon: (
+        //         <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        //             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+        //         </svg>
+        //     )
+        // },
         {
             title: "Dentgist",
             description: "Comprehensive dental consultation website providing seamless appointment booking and patient management system.",
@@ -114,11 +114,11 @@ export default function ProjectsSection() {
                                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
                                         <a
                                             href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                            target={project.link.startsWith("/") ? undefined : "_blank"}
+                                            rel={project.link.startsWith("/") ? undefined : "noopener noreferrer"}
                                             className={`opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-${project.linkColor}-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100`}
                                         >
-                                            View Live Site
+                                            {project.link.startsWith("/") ? "View Project" : "View Live Site"}
                                         </a>
                                     </div>
                                 )}
@@ -131,8 +131,8 @@ export default function ProjectsSection() {
                                     {project.link && (
                                         <a
                                             href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                            target={project.link.startsWith("/") ? undefined : "_blank"}
+                                            rel={project.link.startsWith("/") ? undefined : "noopener noreferrer"}
                                             className={`text-${project.linkColor}-600 dark:text-${project.linkColor}-400 hover:text-${project.linkColor}-700 dark:hover:text-${project.linkColor}-300 transition-colors`}
                                         >
                                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -5,6 +5,9 @@ export default function AboutSection() {
                 <h2 className="text-4xl font-bold text-center text-slate-900 dark:text-white mb-16">
                     About Me
                 </h2>
+                <p className="max-w-3xl mx-auto -mt-8 mb-12 text-center leading-relaxed text-slate-600 dark:text-slate-400">
+                    I work across the full product lifecycle: understanding operational needs, shaping system architecture, building application features, and helping teams deliver maintainable software.
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="text-center">
                         <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -12,8 +15,8 @@ export default function AboutSection() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
-                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Leadership</h3>
-                        <p className="text-slate-600 dark:text-slate-400">Leading development teams and architecture planning at Klaimify</p>
+                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Product Engineering</h3>
+                        <p className="text-slate-600 dark:text-slate-400">Building full-stack applications, from React interfaces to APIs and data models</p>
                     </div>
                     <div className="text-center">
                         <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -21,8 +24,8 @@ export default function AboutSection() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Performance</h3>
-                        <p className="text-slate-600 dark:text-slate-400">Optimizing systems for scalability and high performance</p>
+                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Workflow Design</h3>
+                        <p className="text-slate-600 dark:text-slate-400">Designing clear, reliable workflows that connect users, data, and processes across applications</p>
                     </div>
                     <div className="text-center">
                         <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -30,8 +33,8 @@ export default function AboutSection() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
                         </div>
-                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Mentoring</h3>
-                        <p className="text-slate-600 dark:text-slate-400">Guiding team members and promoting clean code practices</p>
+                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Technical Leadership</h3>
+                        <p className="text-slate-600 dark:text-slate-400">Contributing to architecture planning, mentoring teammates, and promoting maintainable code</p>
                     </div>
                 </div>
             </div>
